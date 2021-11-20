@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-45deg, #c9352b 50%, #c9b89f 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+.heading
+{
+    margin: 20px;
+    text-align: center;
+    font-size: 40px;
+    color:blanchedalmond;
+    font-family: 'Dancing Script', cursive;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
+.landingPage__container 
+{
+  height: 100vh;
+  width: 100vw;
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-45deg, #86d866 50%, #f0a3bc 50%);
+}
+.tagLine 
+{
+  margin: 30px;
+  padding: 10px;
+  font-size: 20px;
+  font-family: "Mochiy Pop P One", sans-serif;
+}
+.part-1
+{
+    display:inline-block;
+    margin-left:100px;
+    margin-right:100px;
+    margin-top:60px;
+}
+.part-2
+{
+    display:inline-block;
+    margin-left: 300px;
+}
+a 
+{
+    width:130px;
+    height: 60px;
+    padding: 30px;
+    margin: 50px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color:black;
+    border-radius: 1vw;
+    font-size: 1.3vw;
+}
+#filters
+{
+    position:relative;
+    top:-18px;
+
+}
+#ocr
+{
+    position:relative;
+    left:65px;
+}
+@media (max-width: 900px)
+{
+    .tagLine
+    {
+        font-size: 15px;
+    }
+    a
+    {
+        width:80px;
+        height:40px;
+        padding: 25px;
+        margin: 30px;
+    }
+    .part-1
+    {
+        margin-left:50px;
+        margin-right: 50px;
+        margin-top: 50px;
+    }
+}
